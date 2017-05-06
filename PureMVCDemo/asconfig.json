@@ -1,0 +1,14 @@
+{
+	"config": "flex",
+	"compilerOptions": {
+		"debug": true,
+		"js-output-type": "flexjs",
+		"library-path": [
+            "libs"
+        ]
+	},
+	"files":
+	[
+		"src/main.mxml"
+	]
+}

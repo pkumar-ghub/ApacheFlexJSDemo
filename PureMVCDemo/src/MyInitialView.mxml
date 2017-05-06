@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<js:View xmlns:fx="http://ns.adobe.com/mxml/2009"
+	 xmlns:js="library://ns.apache.org/flexjs/basic" xmlns:view="org.view.*">
+	<js:states>
+		<js:State name="default" />
+		<js:State name="editor" />
+		<js:State name="profile" />
+	</js:states>
+	<js:VContainer>
+		<js:style>
+			<js:SimpleCSSStyles top="10" left="400"/>
+		</js:style>
+		<js:HContainer>
+			<js:TextButton id="buttonId1" text="EDITOR" width="100" height="40"/>
+			<js:Spacer width="10" />
+			<js:TextButton id="buttonId3" text="PROFILE" width="100" height="40"/>
+		</js:HContainer>
+		<js:Spacer height="2" />
+		<js:Label text="PUREMVC Demo: Click on Button to view demo."  includeIn="default"/>
+		<js:Spacer height="2" />
+		<view:EditorView id="editorViewId" width="500" height="250" includeIn="editor" />
+		<view:ProfileView id="profileViewId" width="500" height="250" includeIn="profile" />
+	</js:VContainer>
+</js:View>

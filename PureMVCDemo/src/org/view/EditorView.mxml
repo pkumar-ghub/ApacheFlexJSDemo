@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<js:Panel xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		  xmlns:js="library://ns.apache.org/flexjs/basic"
+		  title="Editor View">
+	<fx:Style>
+		@namespace js "library://ns.apache.org/flexjs/basic";
+
+		js|TableCell{
+			border:none;
+		}
+
+		.lblStyle{
+			font-weight : bold;
+		}
+	</fx:Style>
+	<js:beads>
+		<js:VerticalLayout />
+	</js:beads>  
+	<js:Table>
+		<js:TableRow>
+			<js:TableCell><js:Label text="ID:" className="lblStyle" /></js:TableCell>
+			<js:TableCell><js:TextInput id="txtId" width="150" /></js:TableCell>
+		</js:TableRow>
+
+		<js:TableRow>
+			<js:TableCell><js:Label text="Name:" className="lblStyle"/></js:TableCell>
+			<js:TableCell><js:TextInput id="txtName" width="150" /></js:TableCell>
+		</js:TableRow>
+
+		<js:TableRow>
+			<js:TableCell><js:Label text="Company:" className="lblStyle"/></js:TableCell>
+			<js:TableCell><js:TextInput id="txtComp" width="150" /></js:TableCell>
+		</js:TableRow>
+
+		<js:TableRow>
+			<js:TableCell><js:Label text="DOJ:" className="lblStyle"/></js:TableCell>
+			<js:TableCell><js:DateField id="dojId" height="25" width="150" /></js:TableCell>
+		</js:TableRow>
+		<js:TableRow>
+			<js:TableCell></js:TableCell>
+			<js:TableCell></js:TableCell>
+		</js:TableRow>
+		<js:TableRow>
+			<js:TableCell></js:TableCell>
+			<js:TableCell><js:TextButton id="btnAddId" width="80" text="ADD" /></js:TableCell>
+		</js:TableRow>
+	</js:Table>
+</js:Panel>
