@@ -1,0 +1,18 @@
+{
+    "config": "flex",
+    "type": "lib",
+    "compilerOptions": {
+        "source-path": [
+            "src"
+        ],
+        "include-sources": [
+            "src"
+        ],
+        "output": "bin/PureMVC.swc",
+        "debug": true,
+        "define": [
+            {"name":"COMPILE::JS","value":true},
+            {"name":"COMPILE::AS3","value":false}
+        ]
+    }
+}
