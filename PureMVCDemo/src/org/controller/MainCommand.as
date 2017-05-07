@@ -6,7 +6,7 @@ package org.controller
 	import org.puremvc.as3.multicore.interfaces.ICommand;
 	import org.puremvc.as3.multicore.interfaces.INotification;
 	import org.puremvc.as3.multicore.patterns.command.SimpleCommand;
-	import org.view.MainMediator;
+	import org.mediators.MainMediator;
 
 	public class MainCommand extends SimpleCommand implements ICommand
 	{

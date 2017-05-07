@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
                 xmlns:js="library://ns.apache.org/flexjs/basic"
-                xmlns:ns1="*" applicationComplete="init()">
-   <fx:Script>
+                xmlns:view="org.view.*" applicationComplete="init()">
+    <fx:Script>
 		<![CDATA[
-			import org.facade.MainFacade;
-			private var mainFacade:MainFacade = MainFacade.getInstance("MAIN_APP");
-			
-			private function init():void
-			{
-				mainFacade.startup(this);
-			}
-			
-		]]>
+        import org.facade.MainFacade;
+
+        private var mainFacade:MainFacade = MainFacade.getInstance("MAIN_APP");
+
+        private function init():void
+        {
+            mainFacade.startup(this);
+        }
+        ]]>
 	</fx:Script>
-    
-   <js:valuesImpl>
-        <js:SimpleCSSValuesImpl />
+
+    <js:valuesImpl>
+        <js:SimpleCSSValuesImpl/>
     </js:valuesImpl>
     <js:initialView>
-        <ns1:MyInitialView />
+        <view:MyInitialView/>
     </js:initialView>
 </js:Application>

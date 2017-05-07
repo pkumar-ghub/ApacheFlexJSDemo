@@ -1,20 +1,16 @@
-package org.view
+package org.mediators
 {
 	import org.apache.flex.core.Application;
-	import org.apache.flex.core.View;
 	import org.apache.flex.events.MouseEvent;
 	import org.facade.MainFacade;
 	import org.proxy.MainProxy;
 	import org.puremvc.as3.multicore.interfaces.INotification;
 	import org.puremvc.as3.multicore.patterns.mediator.Mediator;
-	import org.apache.flex.html.Alert;
-	import org.apache.flex.html.TableRow;
-	import org.apache.flex.html.TableCell;
-	import org.apache.flex.html.Label;
 	import org.apache.flex.collections.ArrayList;
 	import org.apache.flex.html.SimpleAlert;
+    import org.view.MyInitialView;
 
-	public class MainMediator extends Mediator
+    public class MainMediator extends Mediator
 	{
 		public static const NAME:String = 'MainMediator';
 		private var profileArray:Array = new Array();
@@ -31,9 +27,9 @@ package org.view
 			mainView.buttonId3.addEventListener(MouseEvent.CLICK , onButtonClick);
 		}
 		
-		private function get app():main
+		private function get app():Main
 		{
-			return this.viewComponent as main
+			return this.viewComponent as Main
 		}
 		
 		private function onButtonClick(evnt:MouseEvent):void
