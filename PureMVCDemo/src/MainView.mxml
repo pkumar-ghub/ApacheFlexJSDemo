@@ -17,16 +17,26 @@
   limitations under the License.
 
 -->
-<js:Panel xmlns:fx="http://ns.adobe.com/mxml/2009"
-		  title="Profiles View"
-		  xmlns:js="library://ns.apache.org/flexjs/basic">
+<js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+                xmlns:js="library://ns.apache.org/flexjs/basic"
+                xmlns:view="org.view.*" applicationComplete="init()">
+    <fx:Script>
+		<![CDATA[
+        import org.facade.MainFacade;
 
-	<js:DataGrid id="profileGridId" width="100%" height="100%">
-		<js:columns>
-			<js:DataGridColumn label="ID" dataField="id" columnWidth="50"  />
-			<js:DataGridColumn label="Name" dataField="name" columnWidth="150"/>
-			<js:DataGridColumn label="Company" dataField="company" columnWidth="150"/>
-			<js:DataGridColumn label="DOB" dataField="doj" columnWidth="150"/>
-		</js:columns>
-	</js:DataGrid>
-</js:Panel>
+        private var mainFacade:MainFacade = MainFacade.getInstance("MAIN_APP");
+
+        private function init():void
+        {
+            mainFacade.startup(this);
+        }
+        ]]>
+	</fx:Script>
+
+    <js:valuesImpl>
+        <js:SimpleCSSValuesImpl/>
+    </js:valuesImpl>
+    <js:initialView>
+        <view:MyInitialView/>
+    </js:initialView>
+</js:Application>
