@@ -45,9 +45,9 @@ package org.mediators
 			mainView.buttonId3.addEventListener(MouseEvent.CLICK , onButtonClick);
 		}
 		
-		private function get app():Main
+		private function get app():MainView
 		{
-			return this.viewComponent as Main
+			return this.viewComponent as MainView
 		}
 		
 		private function onButtonClick(evnt:MouseEvent):void

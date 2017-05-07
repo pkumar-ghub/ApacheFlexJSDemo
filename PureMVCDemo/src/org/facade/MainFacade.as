@@ -45,7 +45,7 @@ package org.facade
 			registerCommand( STARTUP, MainCommand);
 		}
 		
-		public function startup(app:Main):void
+		public function startup(app:MainView):void
 		{
 			sendNotification(STARTUP,app);	
 		}
