@@ -33,20 +33,19 @@
       <plugin>
         <groupId>org.apache.flex.flexjs.compiler</groupId>
         <artifactId>flexjs-maven-plugin</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>0.8.0</version>
         <extensions>true</extensions>
         <configuration>
           <includeClasses>
             <includeClass>FlexJSPureMVC</includeClass>
           </includeClasses>
-          <targets>JSFlex</targets>
-          <skipAS>true</skipAS>
+          <skipExtern>true</skipExtern>
         </configuration>
 		 <dependencies>
             <dependency>
               <groupId>org.apache.flex.flexjs.compiler</groupId>
               <artifactId>compiler-jx</artifactId>
-              <version>0.8.0-SNAPSHOT</version>
+              <version>0.8.0</version>
             </dependency>
           </dependencies>
       </plugin>
@@ -55,17 +54,25 @@
 
   <dependencies>
     <dependency>
+      <groupId>com.adobe.flash.framework</groupId>
+      <artifactId>playerglobal</artifactId>
+      <version>20.0</version>
+      <type>swc</type>
+      <scope>provided</scope>
+    </dependency>   
+    <dependency>
       <groupId>org.apache.flex.flexjs.framework</groupId>
       <artifactId>Core</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>0.8.0</version>
       <type>swc</type>
+      <classifier>swf</classifier>
     </dependency>
     <dependency>
       <groupId>org.apache.flex.flexjs.framework</groupId>
       <artifactId>Core</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>0.8.0</version>
       <type>swc</type>
-      <classifier>typedefs</classifier>
+      <classifier>js</classifier>
     </dependency>
   </dependencies>
 </project>
