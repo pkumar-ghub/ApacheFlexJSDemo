@@ -1,0 +1,11 @@
+{
+	"config": "flex",
+	"compilerOptions": {
+		"debug": true,
+		"js-output-type": "flexjs"
+	},
+	"files":
+	[
+		"src/Main.mxml"
+	]
+}
