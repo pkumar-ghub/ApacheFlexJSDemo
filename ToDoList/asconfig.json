@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"targets": [
+			"JSFlex"
+		]
+	},
+	"files": [
+		"src/Main.mxml"
+	]
+}
